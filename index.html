@@ -8,6 +8,7 @@
     <title>Tailwind Dark Mode</title>
   </head>
   <body class="max-h-screen overflow-hidden dark:bg-gray-900">
+    <!-- || NAVBAR SECTION -->
     <nav class="flex justify-between items-center my-10 mx-24">
       <img src="/images/logo.png" alt="Logo Lentera " />
       <div class="space-x-12 text-gray-600">
@@ -19,7 +20,10 @@
         <button id="toggleDark">🌙</button>
       </div>
     </nav>
+    <!-- || HERO SECTION
+     -->
     <section class="flex justify-between mx-24">
+      <!-- Left Section -->
       <article class="my-24">
         <h1 class="text-5xl font-semibold leading-normal dark:text-white">
           We have thousand <br />
@@ -63,12 +67,14 @@
           </button>
         </div>
       </article>
+      <!-- Right Section -->
       <article>
         <img src="/images/banner.png" alt="" />
       </article>
     </section>
 
     <script>
+      // toggle "dark" class when clicking #toggleDark button
       document
         .querySelector("#toggleDark")
         .addEventListener("click", function () {
